@@ -48,3 +48,45 @@ For backend-heavy applications where speed of development, reliability, and scal
 3. **Build and deploy a small-scale full-stack web application**, applying my Python backend knowledge and connecting it to a frontend framework or API.
 
 ---
+
+# 📘 Learning Journal: Exercise 1.2 – Data Types in Python
+
+## 🎯 Learning Goals
+
+- Explain variables and data types in Python
+- Summarize the use of objects in Python
+- Create a data structure for your Recipe app
+
+---
+
+## 🧠 Reflection Questions
+
+### 1. Why use IPython instead of the default Python shell?
+
+IPython provides a more powerful and user-friendly shell compared to Python’s default shell. It offers useful features like syntax highlighting, auto-completion, command history, better error tracebacks, and support for magic commands (e.g., `%time`, `%run`). These features make writing, testing, and debugging code faster and more efficient—especially helpful for beginners or when experimenting interactively.
+
+---
+
+### 2. Four Python Data Types
+
+| Data Type | Description | Scalar or Non-Scalar |
+|-----------|-------------|----------------------|
+| `int`     | Whole numbers like `5`, `-1`, or `100` | Scalar |
+| `float`   | Decimal numbers like `3.14` or `-0.01` | Scalar |
+| `list`    | An ordered, changeable collection like `[1, 2, 3]` | Non-Scalar |
+| `dict`    | Key-value pairs like `{'key': 'value'}` | Non-Scalar |
+
+---
+
+### 3. Difference Between Lists and Tuples
+
+The main difference between lists and tuples is that **lists are mutable**, while **tuples are immutable**. This means you can add, remove, or change items in a list, but not in a tuple. Lists are more flexible and better for data that changes over time. Tuples, on the other hand, are faster and more memory-efficient, making them ideal for fixed collections of data or as keys in dictionaries.
+
+---
+
+### 4. Best Data Structure for a Language-Learning Flashcard App
+
+For a language-learning flashcard app, I would use a **dictionary** to store each flashcard. Each card could have keys like `"word"`, `"definition"`, and `"part_of_speech"`. Dictionaries are ideal because they provide clear associations between labels and values, are easy to update, and can scale well. If the app expands to include example sentences or tags, dictionaries allow easy extension, unlike tuples which are fixed and lists which lack semantic clarity.
+
+---
+
