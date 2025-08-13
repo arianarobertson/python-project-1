@@ -90,3 +90,43 @@ For a language-learning flashcard app, I would use a **dictionary** to store eac
 
 ---
 
+# Exercise 1.3: Functions and Other Operations in Python
+
+## Learning Goals
+
+- Implement conditional statements in Python to determine program flow  
+- Use loops to reduce time and effort in Python programming  
+- Write functions to organize Python code  
+
+## Reflection Questions
+
+### 1. Write a script for a simple travel app using if-elif-else statements:
+
+```python
+destination = input("Where do you want to travel? ").strip()
+
+if destination.lower() == "paris":
+    print("Enjoy your stay in Paris!")
+elif destination.lower() == "tokyo":
+    print("Enjoy your stay in Tokyo!")
+elif destination.lower() == "new york":
+    print("Enjoy your stay in New York!")
+else:
+    print("Oops, that destination is not currently available.")
+
+2. Explain logical operators in Python:
+Logical operators in Python are used to combine conditional statements and return Boolean results (True or False). The main logical operators are:
+
+and: Returns True if both conditions are true
+
+or: Returns True if at least one condition is true
+
+not: Negates the condition, turning True to False and vice versa
+
+These operators are essential for making complex decisions and controlling the flow of a program.
+
+3. What are functions in Python? When and why are they useful?
+Functions in Python are blocks of reusable code designed to perform a specific task. They help break down programs into smaller, manageable pieces, improve code readability, and avoid repetition by allowing the same code to be executed multiple times. Functions also make debugging and testing easier, and support modular programming by enabling code reuse across different parts of a project.
+
+4. Progress towards goals set in Exercise 1
+So far, I have made solid progress towards my goals. I have gained confidence in handling different data types, writing conditional statements, and using loops to simplify repetitive tasks. I am now able to write functions that organize code logically and make my programs more efficient. Moving forward, I aim to deepen my understanding of Python libraries and improve my debugging skills during coding exercises.

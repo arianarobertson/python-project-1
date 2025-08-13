@@ -84,3 +84,34 @@ For the recipe app task, I chose **dictionaries** to store individual recipes be
 
 Through this exercise, I developed a stronger understanding of how Python stores and organizes data using core types and structures. I practiced implementing these through real-world examples like population analysis and a recipe app. This hands-on approach made abstract concepts much more concrete.
 
+# Exercise 1.3: Functions and Other Operations in Python
+
+## Overview
+
+This exercise focused on practicing conditional statements, loops, and functions in Python. Through various tasks, I learned to control program flow using `if-elif-else` statements, automate repetitive tasks with loops, and organize code efficiently with functions. Additionally, I applied these concepts to practical problems like simple calculators, recipe managers, and user input handling.
+
+## What I Did
+
+- Implemented if-elif-else statements to make decisions based on user input.  
+- Used for and while loops to reduce repetition in code.  
+- Defined functions to encapsulate logic and improve modularity.  
+- Created scripts that interactively take user inputs to build data structures such as recipes.  
+- Practiced writing readable and maintainable Python code in the IPython shell and scripts.  
+
+## Learning Goals
+
+- Use conditional statements to control program flow.  
+- Apply loops to automate repetitive tasks.  
+- Write and use functions to structure Python code clearly.  
+
+## Reflection
+
+This exercise helped me understand the importance of control flow in programs and how loops and functions can greatly reduce effort and improve readability. Writing conditional statements felt more intuitive after practicing multiple scenarios. The experience of building small interactive programs also improved my confidence in handling user input and working with Python data structures.
+
+## How to Run
+
+The scripts and code snippets can be run directly in the IPython shell or saved as `.py` files and executed with Python.
+
+---
+
+
