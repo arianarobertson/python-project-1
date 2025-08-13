@@ -130,3 +130,42 @@ Functions in Python are blocks of reusable code designed to perform a specific t
 
 4. Progress towards goals set in Exercise 1
 So far, I have made solid progress towards my goals. I have gained confidence in handling different data types, writing conditional statements, and using loops to simplify repetitive tasks. I am now able to write functions that organize code logically and make my programs more efficient. Moving forward, I aim to deepen my understanding of Python libraries and improve my debugging skills during coding exercises.
+
+---
+
+# 📘 Learning Journal: Exercise 1.4 - File Handling in Python
+
+## Learning Goals
+
+- Use files to store and retrieve data in Python
+
+## Reflection Questions
+
+### 1. Why is file storage important when you’re using Python? What would happen if you didn’t store local files?
+
+File storage is important because it allows data to be saved permanently beyond the program’s runtime. Without local files, any data created or modified during program execution would be lost once the program stops, meaning users would have to re-enter data every time. Persistent storage ensures data continuity and supports more complex applications.
+
+---
+
+### 2. In this Exercise you learned about the pickling process with the `pickle.dump()` method. What are pickles? In which situations would you choose to use pickles and why?
+
+Pickles are a way of serializing Python objects into a byte stream so they can be saved to a file and later loaded back into a Python program with their structure and data intact. Pickles are useful when you want to save complex Python objects like dictionaries, lists, or custom classes and retrieve them later exactly as they were, without converting them to a human-readable format.
+
+---
+
+### 3. In Python, what function do you use to find out which directory you’re currently in? What if you wanted to change your current working directory?
+
+To find the current working directory, you use `os.getcwd()`. To change the current working directory, you use `os.chdir(path)` where `path` is the directory you want to switch to. This is done by importing the `os` module first.
+
+---
+
+### 4. Imagine you’re working on a Python script and are worried there may be an error in a block of code. How would you approach the situation to prevent the entire script from terminating due to an error?
+
+I would use a try-except block to catch and handle the error gracefully. This way, if an exception occurs in the protected code, the program can respond appropriately (e.g., showing a message or retrying) without crashing or stopping execution entirely.
+
+---
+
+### 5. You’re now more than halfway through Achievement 1! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? Feel free to use these notes to guide your next mentor call.
+
+My learning is progressing steadily, and I’m proud of understanding how to use functions and data structures effectively in Python. I am still working on becoming more confident with file handling and exception management. I would like more practice with organizing larger programs and working with binary files to strengthen my overall coding skills.
+

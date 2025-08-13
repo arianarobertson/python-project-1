@@ -114,4 +114,56 @@ The scripts and code snippets can be run directly in the IPython shell or saved 
 
 ---
 
+# Exercise 1.4: File Handling in Python
+
+## Overview
+
+In this exercise, you will practice working with files in Python, including writing to text files and handling binary files using the `pickle` module. This will help you understand how to store data persistently and retrieve it later, an essential skill for many real-world applications.
+
+## Learning Goals
+
+- Understand how to write data to text files and read it back.
+- Learn how to serialize and deserialize Python objects using the `pickle` module.
+- Handle exceptions during file operations to create robust scripts.
+- Manage recipe data by saving and loading it from binary files.
+
+## Tasks
+
+### Practice Task 1: Writing to Files
+
+- Write a list of numbers (50 to 100) to a text file using the `writelines()` method.
+- Store the file properly using the `with` keyword.
+
+### Practice Task 2: Binary Files
+
+- Create a recipe dictionary.
+- Serialize and save the recipe data to a binary file using `pickle.dump()`.
+- Load the data back using `pickle.load()` and display it in a readable format.
+
+### Recipe Management Scripts
+
+- Create `recipe_input.py` to accept multiple recipes from the user, calculate their difficulty, and save them to a binary file.
+- Create `recipe_search.py` to load recipes from the binary file, display all available ingredients, and search for recipes containing a user-specified ingredient.
+
+## How to Run
+
+1. Run `recipe_input.py` to input recipes and save them.
+2. Run `recipe_search.py` to search recipes by ingredients.
+3. Follow on-screen prompts for inputs.
+4. Take screenshots of your outputs as evidence of your work.
+
+## Deliverables
+
+- `recipe_input.py`
+- `recipe_search.py`
+- Binary data file (e.g., `recipes_data.bin`)
+- Screenshots folder named `1.4-Practice Task 1` and `1.4-Practice Task 2`
+- Updated learning journal (`learningjournal.md`)
+
+## Reflection
+
+File handling is a core Python skill that allows programs to persist data beyond runtime. Using pickle to serialize data ensures complex objects can be saved and restored easily. Handling files robustly with exception blocks helps avoid crashes and improve user experience.
+
+---
+
 
