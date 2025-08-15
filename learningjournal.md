@@ -133,8 +133,6 @@ So far, I have made solid progress towards my goals. I have gained confidence in
 
 ---
 
-# 📘 Learning Journal: Exercise 1.4 - File Handling in Python
-
 ## Learning Goals
 
 - Use files to store and retrieve data in Python
@@ -230,3 +228,36 @@ Polymorphism allows different objects to respond to the same method or operation
 For example, consider a base class Animal with a method speak(). A subclass Dog could implement speak() to return "Woof!", while a subclass Cat could implement it to return "Meow!". When you loop over a list of animals and call speak() on each, Python will automatically call the correct method depending on the object type.
 
 This is powerful because it allows you to write code that works on a general level but behaves correctly for each specific object type, making your programs more dynamic and easier to extend.
+
+---
+
+#Exercise 1.6: Connecting to Databases in Python
+Learning Goals
+Create a MySQL database for your Recipe app
+
+Understand how to connect a Python script to a MySQL database
+
+Use SQL queries within Python to create, read, update, and delete data
+
+Learn how to structure and store data using relational databases
+
+Reflection Questions
+1. What are databases and what are the advantages of using them?
+Databases are organized collections of data that can be easily accessed, managed, and updated. They allow you to store data in structured formats (like tables), which makes it easier to query specific information quickly. The main advantages of using databases are efficiency, scalability, and data integrity. Compared to using files or manual tracking, databases ensure that data is not duplicated unnecessarily, can be retrieved or modified easily, and is kept secure. For my Recipe app, using a database helped centralize recipes and made it easy to search, update, and delete records with precision.
+
+2. List 3 data types that can be used in MySQL and describe them briefly:
+
+INT – Used to store whole numbers (e.g. 1, 100, -42). Perfect for IDs or quantities.
+
+VARCHAR(n) – Used to store strings of text with a defined maximum length (e.g. VARCHAR(50)). Ideal for names, titles, or short descriptions.
+
+FLOAT – Used to store decimal numbers. Useful when working with prices or measurements that aren't whole numbers.
+
+3. In what situations would SQLite be a better choice than MySQL?
+SQLite is lightweight and self-contained, so it’s a great choice for smaller projects, prototyping, or apps where simplicity and portability matter more than performance. Since it stores the database in a single file, it's easier to set up and manage than MySQL. For example, if I was creating a simple personal recipe app or testing features locally without a full server setup, I’d probably use SQLite instead of MySQL.
+
+4. Think back to what you learned in the Immersion course. What do you think about the differences between JavaScript and Python as programming languages?
+JavaScript is primarily used for front-end web development, where it's great for making websites interactive and dynamic. Python, on the other hand, is more general-purpose and is often used for back-end development, data analysis, scripting, and automation. I’ve noticed that Python tends to have more readable syntax and is easier to pick up for beginners. JavaScript is more event-driven, especially in the browser environment, while Python is often more procedural and cleanly structured. Both have their strengths, but Python feels more straightforward for back-end tasks like working with databases.
+
+5. Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
+While Python is very beginner-friendly and great for many tasks, it does have limitations. It can be slower than other languages like C++ or Java because it’s interpreted rather than compiled. Python isn’t always the best choice for mobile app development or memory-intensive tasks. Also, for very large-scale web applications, frameworks in other languages like JavaScript (Node.js) or Java might offer better performance. Despite that, Python’s strengths in readability, data handling, and rapid development make it a solid tool for many applications.

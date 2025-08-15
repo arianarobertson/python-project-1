@@ -243,7 +243,53 @@ See the `/screenshots/` folder or individual screenshot files in this directory 
 
 ---
 
-## 📂 Folder Structure
+# Exercise 1.6 🍽️ Recipe App with MySQL Integration
 
+This project enhances a command-line Recipe App using a MySQL database to store and manage recipe data. It was developed as part of **Exercise 1.6** in the Code First Girls Python course.
+
+## 📚 Overview
+
+The `recipe_mysql.py` script allows users to:
+
+1. **Create new recipes**
+2. **Search for recipes by ingredient**
+3. **Update existing recipes**
+4. **Delete recipes**
+
+All data is stored in a MySQL database named `task_database`.
+
+---
+
+## 🛠️ Technologies Used
+
+- Python 3
+- MySQL Server (version 9.4.0)
+- `mysql-connector-python` library
+- Virtual environment: `cf-python-copy`
+
+---
+
+## 🧩 Database Design
+
+Database: `task_database`  
+Table: `Recipes`
+
+| Column         | Data Type     | Description                                 |
+|----------------|---------------|---------------------------------------------|
+| id             | INT (AUTO_INCREMENT) | Primary key for the recipe |
+| name           | VARCHAR(50)   | Recipe name                                 |
+| ingredients    | VARCHAR(255)  | Comma-separated ingredients                 |
+| cooking_time   | INT           | Cooking time in minutes                     |
+| difficulty     | VARCHAR(20)   | Calculated as: Easy, Medium, Intermediate, Hard |
+
+---
+
+## 🚀 How to Run the App
+
+### ✅ Prerequisites
+
+- MySQL Server installed and running
+- User `cf-python` created with password `password`
+- MySQL connector for Python installed:
 
 
