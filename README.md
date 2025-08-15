@@ -166,4 +166,84 @@ File handling is a core Python skill that allows programs to persist data beyond
 
 ---
 
+# 🧁 Exercise 1.5 - OOP in Python Recipe App
+
+## 📌 Overview
+
+This task demonstrates how to build and manage a simple **Recipe App** using **object-oriented programming (OOP)** principles in Python. Instead of using dictionaries to store recipe data, we now use classes, objects, and custom methods to structure our data and logic more efficiently.
+
+---
+
+## 🎯 Key Concepts Covered
+
+- Creating and using classes in Python
+- Defining instance and class attributes
+- Writing getter and setter methods
+- Using `*args` to handle variable-length arguments
+- Implementing object methods for searching and displaying data
+- Using `__str__()` to format object output
+- Keeping track of global state using class variables
+
+---
+
+## 🛠 Files
+
+- `recipe_oop.py`: Main Python script containing the `Recipe` class, helper methods, recipe creation logic, and ingredient search functionality.
+- Screenshots:
+  - `1.5-task-class-definition.png`
+  - `1.5-task-tea.png`
+  - `1.5-task-coffee.png`
+  - `1.5-task-cake.png`
+  - `1.5-task-smoothie.png`
+  - `1.5-task-search-water.png`
+  - `1.5-task-search-sugar.png`
+  - `1.5-task-search-bananas.png`
+
+---
+
+## 🧪 How It Works
+
+1. **Define the `Recipe` class** with attributes like `name`, `ingredients`, `cooking_time`, and `difficulty`.
+2. **Add ingredients** and calculate the difficulty level automatically based on time and ingredients.
+3. **Use class-level tracking** to maintain a list of all ingredients used.
+4. **Define a `recipe_search()` function** to find and print recipes containing a specific ingredient.
+5. **Create multiple recipe objects** and search for ingredients such as `"Water"`, `"Sugar"`, and `"Bananas"`.
+
+---
+
+## 🔍 Sample Recipes
+
+- **Tea**
+- **Coffee**
+- **Cake**
+- **Banana Smoothie**
+
+Each recipe is stored as an object and includes formatted output via the `__str__()` method.
+
+---
+
+## ✅ Output Screenshots
+
+Screenshots were taken in IPython at each key step:
+
+- Class creation
+- Recipe creation
+- Ingredient search
+
+See the `/screenshots/` folder or individual screenshot files in this directory for visual proof of execution.
+
+---
+
+## 🧠 What I Learned
+
+- How to structure Python programs using classes and methods
+- The power of `*args` for flexible method input
+- When and how to use class variables effectively
+- How to refactor procedural code into reusable object-oriented design
+
+---
+
+## 📂 Folder Structure
+
+
 

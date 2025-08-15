@@ -169,3 +169,64 @@ I would use a try-except block to catch and handle the error gracefully. This wa
 
 My learning is progressing steadily, and I’m proud of understanding how to use functions and data structures effectively in Python. I am still working on becoming more confident with file handling and exception management. I would like more practice with organizing larger programs and working with binary files to strengthen my overall coding skills.
 
+# Exercise 1.5: Object-Oriented Programming in Python
+
+1. In your own words, what is object-oriented programming? What are the benefits of OOP?
+Object-oriented programming (OOP) is a method of structuring and designing programs by organizing related data and behavior into "objects". These objects are instances of "classes", which serve as blueprints that define the structure (attributes) and behavior (methods) of the object. OOP makes code more modular, reusable, and easier to manage by breaking it down into smaller, more logical components.
+
+Some of the main benefits of OOP include:
+
+Reusability: Once a class is defined, it can be used to create multiple instances (objects) with shared functionality.
+
+Encapsulation: It keeps data safe from external interference and misuse by bundling it with the methods that work on it.
+
+Maintainability: It is easier to locate and fix bugs in well-structured OOP code.
+
+Scalability: Larger applications can be structured and expanded more easily using OOP.
+
+OOP is especially helpful in real-world applications where multiple entities interact with each other and have common properties or behaviors.
+
+2. What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+In Python, a class is a blueprint for creating objects. It defines the structure and behaviors that its objects will have. An object is an instance of a class, representing a specific realization of that blueprint.
+
+Example:
+
+Imagine you’re designing a "Car" system. You could define a Car class with attributes like make, model, year, and methods like start_engine() and stop_engine().
+
+python
+Copy
+Edit
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def start_engine(self):
+        print("Engine started")
+
+# Creating objects
+car1 = Car("Toyota", "Camry")
+car2 = Car("Honda", "Civic")
+
+car1.start_engine()  # Output: Engine started
+In this example, Car is the class, and car1 and car2 are objects (or instances) of that class. Each object has its own set of data but shares the same functionality defined in the class.
+
+3. In your own words, write brief explanations of the following OOP concepts (100–200 words each):
+a) Encapsulation
+Encapsulation is the principle of bundling data (attributes) and the methods that operate on that data into a single unit, typically a class. This allows for controlling access to the internal state of an object by using private or protected variables and providing public getter and setter methods. Encapsulation helps ensure that data cannot be changed arbitrarily from outside the object, making programs more secure and reducing the chances of unintended interference or bugs.
+
+For example, in a class representing a bank account, you might not want to allow direct access to the balance attribute. Instead, you’d provide methods like deposit() and withdraw() to modify the balance while enforcing rules like not allowing negative balances. Encapsulation enforces the idea of "hiding the complexity" and exposing only what is necessary.
+
+b) Inheritance
+Inheritance is an OOP concept where a class (child or subclass) inherits properties and methods from another class (parent or superclass). This helps promote code reuse and logical hierarchy. Instead of writing the same code again in multiple classes, you can write it once in a base class and extend or override it in derived classes as needed.
+
+For instance, a base class Vehicle might define attributes like speed and methods like start(). Then, a subclass Car could inherit everything from Vehicle and add its own specific attributes, like number_of_doors. This allows Car to use both general vehicle functionality and its own specialized behavior.
+
+Inheritance supports polymorphism and helps build complex systems more efficiently by promoting code modularity and maintainability.
+
+c) Polymorphism
+Polymorphism allows different objects to respond to the same method or operation in different ways. In Python, polymorphism is commonly achieved through method overriding in subclasses or by using common interfaces. It enables flexibility in code, especially when handling multiple object types that share a common method name but implement different logic.
+
+For example, consider a base class Animal with a method speak(). A subclass Dog could implement speak() to return "Woof!", while a subclass Cat could implement it to return "Meow!". When you loop over a list of animals and call speak() on each, Python will automatically call the correct method depending on the object type.
+
+This is powerful because it allows you to write code that works on a general level but behaves correctly for each specific object type, making your programs more dynamic and easier to extend.
