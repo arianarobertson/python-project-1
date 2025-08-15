@@ -292,4 +292,100 @@ Table: `Recipes`
 - User `cf-python` created with password `password`
 - MySQL connector for Python installed:
 
+# Exercise 1.7 - Command Line Recipe App
 
+## Overview
+
+This is a command-line Recipe application built using Python and SQLAlchemy with a MySQL backend. It allows users to create, view, search, edit, and delete recipes through a simple terminal interface.
+
+The app emphasizes robust user input handling to avoid crashes and ensure a smooth user experience for non-technical users.
+
+---
+
+## Features
+
+- **Create recipes** with name, ingredients, and cooking time.
+- **Automatically calculate difficulty** based on ingredients count and cooking time.
+- **View all recipes** stored in the database.
+- **Search recipes** by selecting ingredients.
+- **Edit existing recipes** (name, ingredients, cooking time).
+- **Delete recipes** safely with confirmation.
+- Handles **unexpected or invalid user inputs gracefully** without crashing.
+
+---
+
+## Technologies Used
+
+- Python 3.x
+- SQLAlchemy ORM
+- MySQL (or MariaDB) Database
+- `pymysql` driver for MySQL connection
+
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone <repository-url>
+cd <repository-directory>
+2. Install Required Packages
+Make sure you have Python 3 installed.
+
+Install dependencies via pip:
+
+bash
+Copy
+Edit
+pip install sqlalchemy pymysql
+3. Set Up MySQL Database
+Ensure MySQL server is installed and running.
+
+Create a database named task_database (or your preferred name):
+
+sql
+Copy
+Edit
+CREATE DATABASE task_database;
+Update the database credentials in recipe_app.py:
+
+python
+Copy
+Edit
+engine = create_engine('mysql+pymysql://username:password@hostname/task_database')
+Replace username, password, hostname, and task_database with your MySQL info.
+
+4. Run the Application
+Exit the MySQL command line if you're inside it.
+
+Run the app from your terminal:
+
+bash
+Copy
+Edit
+python recipe_app.py
+Usage
+Follow on-screen prompts to navigate the menu.
+
+Input data as requested (e.g., recipe name, number of ingredients, ingredient names, cooking time).
+
+Type quit in the main menu to exit the application safely.
+
+Notes
+The difficulty level of a recipe is automatically computed based on cooking time and the number of ingredients.
+
+The application handles invalid inputs by showing an error message and returning to the menu without crashing.
+
+Ingredients should be entered as individual items; they will be stored as a comma-separated string in the database.
+
+Testing
+Test the app by creating, viewing, searching, editing, and deleting recipes.
+
+Try invalid inputs (e.g., letters when numbers expected) to see how the app responds.
+
+Author
+Ariana Robertson
+
+License
+This project is licensed under the MIT License.

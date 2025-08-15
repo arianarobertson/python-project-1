@@ -261,3 +261,59 @@ JavaScript is primarily used for front-end web development, where it's great for
 
 5. Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
 While Python is very beginner-friendly and great for many tasks, it does have limitations. It can be slower than other languages like C++ or Java because it’s interpreted rather than compiled. Python isn’t always the best choice for mobile app development or memory-intensive tasks. Also, for very large-scale web applications, frameworks in other languages like JavaScript (Node.js) or Java might offer better performance. Despite that, Python’s strengths in readability, data handling, and rapid development make it a solid tool for many applications.
+
+---
+
+#— Exercise 1.7 📘 Learning Journal: Finalizing Your Python Program
+✅ Learning Goals
+Interact with a database using an object-relational mapper (ORM)
+
+Build a command-line Recipe application using Python and SQLAlchemy
+
+🔎 Reflection Questions
+1. What is an Object Relational Mapper and what are the advantages of using one?
+An Object Relational Mapper (ORM) is a tool that allows developers to interact with a relational database (like MySQL) using object-oriented programming. Instead of writing raw SQL queries, I can work with Python classes and methods to perform operations like insertions, updates, deletions, and queries.
+
+Advantages of using an ORM:
+
+Speeds up development by abstracting complex SQL operations
+
+Helps avoid SQL injection vulnerabilities by safely managing query parameters
+
+Makes code more readable and maintainable
+
+Allows for easier migration between different databases
+
+Integrates naturally with Python applications
+
+2. By this point, you’ve finished creating your Recipe app. How did it go?
+Creating the Recipe app was challenging at times, but ultimately rewarding. I gained hands-on experience connecting a Python application to a MySQL database and implementing core CRUD (Create, Read, Update, Delete) functionality using SQLAlchemy.
+
+Something I did well:
+I was consistent in commenting my code and structuring my functions to keep the application organized and easy to debug. I also implemented input validation and error handling, which helped make the app more user-friendly.
+
+Something I would change:
+If I started over, I would implement a separate utils.py file for repeated logic like input validation or formatting to make the code more modular. I’d also consider adding a logging feature for better tracking of database changes or errors.
+
+3. Interview Scenario: What experience do you have creating an app using Python?
+"In one of my recent projects, I built a command-line Recipe app using Python and SQLAlchemy. The application allowed users to create, view, edit, delete, and search recipes stored in a MySQL database. I implemented object-relational mapping to simplify database interactions and added input validation to make the app user-friendly and robust. This project helped me solidify my understanding of Python classes, functions, and integrating external packages. It also gave me confidence in building scalable applications that interact with persistent data."
+
+🧠 Overall Reflection on Achievement 1
+What went well during this Achievement?
+I developed a strong foundational understanding of Python’s capabilities beyond simple scripting — especially its integration with external tools like SQLAlchemy and MySQL. I learned to write cleaner code, handle unexpected inputs, and structure an app around a user menu and database logic.
+
+What’s something you’re proud of?
+I'm proud of completing the full flow of the application from scratch — including designing the database model, setting up user interaction, handling errors, and making sure the app runs smoothly. I also took the time to test each menu option thoroughly.
+
+What was the most challenging aspect of this Achievement?
+Debugging database connection issues and getting the ORM setup correct was the most challenging part. I had to make sure my MySQL server was running, my connection string was properly formatted, and the correct packages were installed in my environment (like pymysql).
+
+Did this Achievement meet your expectations?
+Yes, it exceeded my expectations. I not only created a working application, but I also developed more confidence in handling real-world Python workflows. The process of breaking down tasks and implementing them in stages made me feel prepared for more complex projects.
+
+Did it give you the confidence to start working with your new Python skills?
+Absolutely. I now feel comfortable working with classes, object-oriented design, and integrating Python with databases. I’m more confident in reading documentation, debugging errors, and building from the ground up.
+
+🚀 Looking Ahead to Achievement 2
+What’s something you want to keep in mind to help you do your best in Achievement 2 (Web Development with Django)?
+I want to remember the value of modular, well-commented code and proper input validation. These are especially important in web development where user interaction is even more dynamic. I'll also make an effort to understand how Django’s ORM builds upon what I've learned with SQLAlchemy to make working with databases even easier in web applications.
